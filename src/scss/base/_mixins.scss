@@ -1,0 +1,43 @@
+@use 'variables' as v;
+
+@mixin device480 {
+    @media (min-width: v.$device480) {
+        @content
+    }
+};
+
+@mixin device768 {
+    @media (min-width: v.$device768) {
+        @content
+    }
+};
+
+@mixin device1200 {
+    @media (min-width: v.$device1200) {
+        @content
+    }
+};
+
+@mixin device1200 {
+    @media (min-width: v.$device1200) {
+        @content
+    }
+};
+
+@mixin container {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+@mixin display-grid($col: 1, $gap: 1rem) {
+    display: grid;
+    grid-template-columns: repeat($col, minmax(0, 1fr));
+    gap: $gap;
+}
+
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

@@ -1,0 +1,26 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.festival {
+    @include m.container;
+
+    @include m.device768 {
+        @include m.display-grid(2, 5rem);
+    }
+
+}
+
+.festival__content {
+
+    margin-top: 5rem;
+
+    .festival__title {
+        margin-bottom: 2rem;
+    }
+
+    .festival__date {
+        color: v.$green;
+        font-weight: 700;
+    }
+
+}
