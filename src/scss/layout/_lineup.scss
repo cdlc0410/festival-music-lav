@@ -58,6 +58,11 @@
     li:nth-child(odd) {
         background-color: color.adjust(v.$yellow, $lightness: 5%);
     }
+
+    transition: background-color .3s ease;
+    li:hover {
+        background-color: color.adjust(v.$yellow, $lightness: -10%);
+    }
 }
 
 .bg-verde {
@@ -65,5 +70,10 @@
 
     li:nth-child(odd) {
         background-color: color.adjust(v.$green, $lightness: 5%);
+    }
+
+    transition: background-color .3s ease;
+    li:hover {
+        background-color: color.adjust(v.$green, $lightness: -10%);
     }
 }
