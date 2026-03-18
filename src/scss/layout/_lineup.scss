@@ -6,13 +6,13 @@
 
     background-color: v.$pink;
 
-    .lineup__title, 
-    .lineup__day {
+    &__title, 
+    &__day {
         text-align: center;
         color: v.$white;
     }
 
-    .lineup__day {
+    &__day {
         font-size: 3rem;
         text-transform: uppercase;
     }

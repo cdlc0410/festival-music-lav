@@ -9,7 +9,7 @@
     max-height: 70rem;
     overflow: hidden;
 
-    .banner__overlay {
+    &__overlay {
         position: absolute;
 
         background: linear-gradient(
@@ -24,7 +24,7 @@
 
     }
 
-    .banner__video {
+    &__video {
         display: block;
         width: auto;
 

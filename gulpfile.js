@@ -12,7 +12,7 @@ export function css( done ) {
 };
 
 export function dev() {
-    console.clear()
+
     watch( 'src/scss/**/*.scss', css )
 }
 

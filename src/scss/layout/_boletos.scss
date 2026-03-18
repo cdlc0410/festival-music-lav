@@ -1,0 +1,95 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+@use 'sass:color';
+
+.boletos {
+
+    background-color: v.$green;
+
+    &__title {
+        color: v.$white;
+    }
+
+    &__container {
+
+        @include m.container;
+        @include m.device768 {
+            @include m.display-grid(2, 5rem);
+        }
+    }
+}
+
+.pase {
+    transition: transform .3s ease-in-out;
+    &:hover {
+        transform: scale(.9);
+    }
+
+    @include m.device768 {
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &__name {
+        font-size: 3.6rem;
+        font-weight: 900;
+        text-align: center;
+
+        color: v.$white;
+    }
+
+    &__header,
+    &__footer {
+        padding: .5rem;
+
+        p {
+            color: v.$white;
+            text-align: center;
+            margin: 0;
+        }
+    }
+
+    &__header {
+        background-color: v.$pink;
+        p {
+            text-transform: uppercase;
+            font-size: 2.2rem;
+            padding: 1rem 0;
+        }
+    }
+
+    &__body {
+        background-color: v.$white;
+
+        ul {
+            @include m.reset-list;
+
+            li {
+                padding: 2rem;
+                border-bottom: .2rem solid #e1e1e1;
+
+                text-align: center;
+            }
+        }
+    }
+
+    &__footer {
+        background-color: v.$white;
+        padding: 3rem;
+
+        p {
+            font-size: 2.8rem;
+            font-weight: 900;
+            background-color: v.$violet;
+            padding: 1rem 0;
+            border-radius: 1rem;
+
+            transition: background-color .3s ease;
+            &:hover {
+                background-color: color.adjust(v.$violet, $lightness: -20%);
+                cursor: pointer;
+            }
+        }
+    }
+}
