@@ -6,7 +6,18 @@
 .header {
     background-color: v.$green;
 
-    text-align: center;
+
+    @include m.device768 {
+        &.fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+
+        box-shadow: .1rem .2rem .3rem #333;
+    }
+    }
 
     &__contenido {
         @include m.device768 {
@@ -46,7 +57,8 @@
         color: v.$white;
         font-size: 2.4rem;
 
-        &:hover {
+        &:hover,
+        &.active {
             color: v.$yellow;
         }
     }
