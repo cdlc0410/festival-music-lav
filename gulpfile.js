@@ -20,3 +20,5 @@ export function dev() {
     console.clear()
     watch( 'src/scss/**/*.scss', css )
 }
+
+export const build = css();
