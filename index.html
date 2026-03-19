@@ -46,7 +46,9 @@
     <section class="festival">
 
         <picture class="festival__img">
-            <img src="src/img/imagen_dj.jpg" alt="Sobre Festival">
+            <source srcset="build/img/imagen_dj.avif" type="image/avif">
+            <source srcset="build/img/imagen_dj.webp" type="image/webp">
+            <img loading="lazy" width="300" height="200" src="build/img/imagen_dj.jpg" alt="Sobre Festival">
         </picture>
 
         <div class="festival__content">

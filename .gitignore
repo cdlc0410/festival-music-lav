@@ -1,4 +1,5 @@
 node_modules/
+src/img/gallery/thumb/
 .env
 dist/
 build/
