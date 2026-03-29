@@ -1,5 +1,5 @@
 {
-  "name": "festival-de-musica",
+  "name": "festival-de-musica-lav",
   "version": "1.0.0",
   "description": "Aprendiendo SASS, Gulp y NPM",
   "keywords": [
@@ -8,7 +8,7 @@
     "Gulp"
   ],
   "license": "ISC",
-  "author": "Carlos Lavieri @lav0410",
+  "author": "Carlos Lavieri @cdlc0410",
   "type": "module",
   "main": "index.js",
   "scripts": {
